@@ -3,10 +3,6 @@
 set -e
 set -x
 
-if [[ "$(uname -s)" == 'Linux' ]]; then
-    sudo apt-get install cmake git libx11-dev freeglut3-dev libjpeg-dev libfreetype6-dev libxrandr-dev libglew-dev libsndfile1-dev libopenal-dev libudev-dev
-fi
-
 if [[ "$(uname -s)" == 'Darwin' ]]; then
     brew update || brew update
     brew outdated pyenv || brew upgrade pyenv
