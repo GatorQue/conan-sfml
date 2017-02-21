@@ -36,6 +36,7 @@ addons:
     - libsndfile1-dev
     - libopenal-dev
     - libudev-dev
+    - tree
 
 matrix:
    include:
