@@ -1,0 +1,6 @@
+PROJECT(conansfml)
+cmake_minimum_required(VERSION 2.8)
+include(conanbuildinfo.cmake)
+CONAN_BASIC_SETUP()
+include_directories(${CMAKE_SOURCE_DIR}/SFML-2.4.1)
+add_subdirectory("./SFML-2.4.1")
