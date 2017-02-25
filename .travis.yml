@@ -34,6 +34,7 @@ addons:
     - libopenal-dev
     - libsndfile1-dev
     - libudev-dev
+    - libssl-dev # For conan package manager
     - libx11-xcb-dev
     - libxrandr-dev
     - udev
