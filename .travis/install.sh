@@ -2,7 +2,6 @@
 
 set -e
 set -x
-docker ps -a
 
 if [[ "$(uname -s)" == 'Darwin' ]]; then
     brew update || brew update
@@ -20,5 +19,20 @@ if [[ "$(uname -s)" == 'Darwin' ]]; then
     pyenv activate conan
 fi
 
+pip install urllib3[secure]
 pip install conan_package_tools # It install conan too
 conan user
+
+# Determine if X11 include files are available at the expected locations:
+ls -R /usr/pkg/xorg/include
+ls -R /usr/X11R6/include
+ls -R /usr/X11R7/include
+ls -R /usr/include/X11
+ls -R /usr/openwin/include
+ls -R /usr/openwin/share/include
+
+# Determine if X11 include files are available at the expected locations:
+ls -R /usr/pkg/xorg/lib
+ls -R /usr/X11R6/lib
+ls -R /usr/X11R7/lib
+ls -R /usr/openwin/lib

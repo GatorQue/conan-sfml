@@ -29,13 +29,17 @@ addons:
     - git
     - cmake
     - libfreetype6-dev
+    - libgl1-mesa-dev
     - libglew-dev
     - libjpeg-dev
     - libopenal-dev
+    - libpthread-stubs0-dev
     - libsndfile1-dev
-    - libudev-dev
     - libssl-dev # For conan package manager
+    - libudev-dev
+    - libx11-dev
     - libx11-xcb-dev
+    - libxcb-image0-dev
     - libxrandr-dev
     - udev
 
