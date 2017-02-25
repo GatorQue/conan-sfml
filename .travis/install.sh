@@ -3,7 +3,6 @@
 set -e
 set -x
 docker ps -a
-tree /usr
 
 if [[ "$(uname -s)" == 'Darwin' ]]; then
     brew update || brew update
