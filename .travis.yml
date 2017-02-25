@@ -27,21 +27,23 @@ addons:
     packages:
     - freeglut3-dev
     - git
-    - cmake
-    - libfreetype6-dev
-    - libgl1-mesa-dev
-    - libglew-dev
-    - libjpeg-dev
-    - libopenal-dev
-    - libpthread-stubs0-dev
-    - libsndfile1-dev
-    - libssl-dev # For conan package manager
-    - libudev-dev
-    - libx11-dev
-    - libx11-xcb-dev
-    - libxcb-image0-dev
-    - libxrandr-dev
-    - udev
+    - cmake                 # For SFML
+    - libfreetype6-dev      # For SFML
+    - libgl1-mesa-dev       # For SFML
+    - libglew-dev           # For SFML
+    - libgpgme11-dev        # For SFML
+    - libjpeg8-dev          # For SFML
+    - libjpeg62             # For SFML
+    - libopenal-dev         # For SFML
+    - libpthread-stubs0-dev # For SFML
+    - libsndfile1-dev       # For SFML
+    - libssl-dev            # For Conan
+    - libudev-dev           # For SFML
+    - libx11-dev            # For SFML
+    - libx11-xcb-dev        # For SFML
+    - libxcb-randr0-dev     # For SFML
+    - libxcb-image0-dev     # For SFML
+    - libxrandr-dev         # For SFML
 
 #cache:
 #  apt: true
