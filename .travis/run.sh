@@ -10,6 +10,6 @@ if [[ "$(uname -s)" == 'Darwin' ]]; then
     pyenv activate conan
 fi
 
-apt install freeglut3-dev libfreetype6-dev libgl1-mesa-dev libglew-dev libgpgme11-dev libjpeg8-dev libopenal-dev libpthread-stubs0-dev libsndfile1-dev libssl-dev libudev-dev libx11-dev libx11-xcb-dev libxcb-randr0-dev libxcb-image0-dev libxrandr-dev
+sudo apt install -y freeglut3-dev libfreetype6-dev libgl1-mesa-dev libglew-dev libgpgme11-dev libjpeg8-dev libopenal-dev libpthread-stubs0-dev libsndfile1-dev libssl-dev libudev-dev libx11-dev libx11-xcb-dev libxcb-randr0-dev libxcb-image0-dev libxrandr-dev
 
 python build.py
